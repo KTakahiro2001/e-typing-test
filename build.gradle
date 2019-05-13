@@ -1,0 +1,24 @@
+plugins {
+    id 'application'
+}
+
+group 'tokyo.ktakahiro'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName="Main"
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.8.1'
+    compile group: 'com.codeborne', name: 'phantomjsdriver', version: '1.4.3'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '2.0.0'
+    compile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
+    compile group: 'org.gebish', name: 'geb-core', version: '2.0'
+    compile group: 'org.gebish', name: 'geb-spock', version: '2.0'
+}
